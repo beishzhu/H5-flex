@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        
+        section div {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        
+        section div:nth-child(1) {
+            background-color: powderblue;
+        }
+        
+        section div:nth-child(2) {
+            background-color: purple;
+            /* 设置自己在侧轴的排列方式 只让第二个圆圈下来 */
+            align-self: flex-end;
+        }
+        
+        p {
+            display: flex;
+            width: 600px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+        
+        p span {
+            flex: 1;
+        }
+        
+        p span:nth-child(2) {
+            /* order 让二号盒子排在 1号盒子的前面 */
+            order: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div></div>
+        <div></div>
+    </section>
+    <p>
+
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </p>
+
+</body>
+
+</html>

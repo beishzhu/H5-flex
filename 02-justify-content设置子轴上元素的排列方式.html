@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            width: 600px;
+            height: 300px;
+            background-color: powderblue;
+            /* 默认主轴就是X轴 */
+            flex-direction: row;
+            /* 默认值从头部开始，如果主轴是 X轴 从左到右排列 */
+            /* justify-content: flex-start; */
+            /* 主轴是 X轴 从右到左排列 */
+            /* justify-content: flex-end; */
+            /* 主轴是 X轴 居中对齐 */
+            /* justify-content: center; */
+            /* 主轴是 X轴 剩余空间平均分配 */
+            /* justify-content: space-around; */
+            justify-content: space-between;
+        }
+        
+        div span {
+            width: 20%;
+            height: 40%;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+    </div>
+</body>
+
+</html>
